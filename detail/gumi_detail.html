@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>제품 소개</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .product-image {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        display: block;
+      }
+      .product-info {
+        text-align: center;
+      }
+      .product-title {
+        font-size: 24px;
+        margin: 20px 0;
+      }
+
+      .product-little-title {
+        text-align: left;
+        font-size: 18px;
+        color: #333;
+      }
+      .product-description {
+        text-align: left;
+        font-size: 16px;
+        color: #333;
+      }
+    </style>
+
+    <section>
+      <div>
+        <nav><a href="../home.html">Home</a></nav>
+        <nav><a href="https://github.com/qkrwogur">github</a></nav>
+        <nav><a href="https://youtu.be/7QvB_lkA_cQ?si=IjAnNbwPepUx8F7S">youtube</a></nav>
+        <nav><a href="#">사람인</a></nav>
+      </div>
+    </section>
+  </head>
+  <body>
+    <div class="container">
+      <div class="product-info">
+        <img
+          src="../img/구미시.png"
+          alt="Widget X 제품 이미지"
+          class="product-image"
+        />
+        <h1 class="product-title">구미시 대기 환경 측정기</h1>
+        <h4 class="product-little-title">주요기능 :</h4>
+        <p class="product-description">
+          14개의 센서와 센서 데이터를 수집하여 서버와 데이터을 전송한다. ota
+          기능이 존재하고, 전송 주기를 변경 기능과 미 전송 저장 기능이 존재
+          한다.
+        </p>
+        <h4 class="product-little-title">나의 역활 :</h4>
+        <p class="product-description">
+          <ul class="product-description">
+            <li>ota 기능 구현</li>
+            <li>신규 센서 추가</li>
+            <li>미 전송 데이터 읽고 쓰기</li>
+            <li>보드간 데이터 연동</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
