@@ -72,8 +72,12 @@ Lcd와 사이렌을 사용하여 현재 이벤트 전달
         <p class="product-description">
           <ul class="product-description">
             <li>lcd 이벤트, 센서값 표출 기능 구현</li>
+            -> rs485센서에서 측정되는 데이터를 임계치에 비교하여 lcd에 표출
             <li>이벤트 처리 기능 구현</li>
+            -> bitset으로 저장되는 이벤트 기능을 관리.
+             <br>서버 전송 성공 여부, 이전 이벤트 상황등을 고려한 bitset 관리 
             <li>보드간 데이터 연동</li>
+            -> uart로 연결되어 있는 측정 보드간 데이터 연동
           </ul>
         </p>
       </div>
