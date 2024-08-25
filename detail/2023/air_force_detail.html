@@ -55,23 +55,34 @@
   <body>
     <div class="container">
       <div class="product-info">
+        <h4 class="product-little-title">1.제품 이미지</h4>
         <img
           src="../../img/공군 통합.png"
           alt="Widget X 제품 이미지"
           class="product-image"
         />
         <h1 class="product-title">공군 탄약고 화재 통합 단말</h1>
-        <h4 class="product-little-title">주요기능 :</h4>
+        <h4 class="product-little-title">2.주요기능</h4>
         <p class="product-description">
           공군 탄약고에 설치되는 문열림 연기 감지 온습도 단말
 Rs485센서를 사용하여 넓은 공군 탄약고의 각종 센서의 데이터를 서버로 전송
         </p>
+        <br></br>
+        <h4 class="product-little-title">
+          3. 아키텍처 다이어그램
+        </h4>
+        <img
+        src="../../img/공군통합_아키텍처.png"
+        width="900" height="400"
+        />
         <h4 class="product-little-title">나의 역할 :</h4>
         <p class="product-description">
           <ul class="product-description">
             <li>이벤트 관리 시스템 구축</li>
-            -> 연기센서와 온도 센서를 통한 화제 상황 이벤트 관리
+            → 연기센서와 온도 센서를 통한 화제 상황 이벤트 관리<br>
+            bitset 으로 이벤트 관리 이전 이벤트와 현재 상황 비교
             <li>온도 센서 추가</li>
+            → 신규 rs485 센서 추가
           </ul>
         </p>
       </div>

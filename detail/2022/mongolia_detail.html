@@ -55,23 +55,34 @@
   <body>
     <div class="container">
       <div class="product-info">
+        <h4 class="product-little-title">1.제품 이미지</h4>
         <img
           src="../../img/몽골화재.png"
           alt="Widget X 제품 이미지"
           class="product-image"
         />
         <h1 class="product-title">화재 감지기</h1>
-        <h4 class="product-little-title">주요기능 :</h4>
+        <h4 class="product-little-title">2.주요기능</h4>
         <p class="product-description">
           몽골 화재 감지와 문 열림 단말. 온도 측정과 연기 측정 센서가 존재
           화재 발생 상태 연기 상태 고온 상태의 각각의 상황을 서버로 전달.
           Esp 이더넷 환경에서 작동          
         </p>
+        <br>
+        <h4 class="product-little-title">
+          3. 아키텍처 다이어그램 
+        </h4>
+        <img
+        src="../../img/몽골_아키텍처.png"
+        width="1000" height="400"
+        />
         <h4 class="product-little-title">나의 역할 :</h4>
         <p class="product-description">
           <ul class="product-description">
             <li>이벤트 상태 관리</li>
+            → 화재 상황 연기 상황에 대한 이벤트 상황 관리
             <li>AT+comand 명령어 처리</li>
+            → usb로 들어오는 AT 명령어 처기 기능 
           </ul>
         </p>
       </div>
