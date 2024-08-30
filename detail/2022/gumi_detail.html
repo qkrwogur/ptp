@@ -56,17 +56,16 @@
     <div class="container">
       <div class="product-info">
         <h1 class="product-title">구미시 대기 환경 측정기</h1>
-        <h4 class="product-little-title">1.제품 이미지</h4>
+        <h4 class="product-little-title">1. 제품 이미지</h4>
         <img
           src="../../img/구미시.png"
           alt="Widget X 제품 이미지"
           class="product-image"
         />
-        <h4 class="product-little-title">2.주요 기능</h4>
+        <h4 class="product-little-title">2. 주요 기능</h4>
         <p class="product-description">
-          14개의 센서와 센서 데이터를 수집하여 서버와 데이터을 전송한다. ota
-          기능이 존재하고, 전송 주기를 변경 기능과 미 전송 저장 기능이 존재
-          한다.
+          14개의 센서로 데이터를 수집하여 서버에 전송. OTA
+          기능이 존재하고, 전송 주기를 변경하는 기능과 미전송 저장 기능이 존재
         </p>
         <h4 class="product-little-title">
           3. 아키텍처 다이어그램 
@@ -75,29 +74,28 @@
         src="../../img/구미통신_아키텍처.png"
         width="1000" height="400"
         />
-        <h5>통신 아키텍처</h5>
+        <h5>▲ 통신 아키텍처 ▲</h5>
         <img
         src="../../img/구미ota_아키텍처.png"
         width="1000" height="400"
         />
-        <h5>ota 아키텍처</h5>
-        <h4 class="product-little-title">4.나의 역할</h4>
+        <h5>▲ OTA 아키텍처 ▲</h5>
+        <h4 class="product-little-title">4. 나의 역할</h4>
         <p class="product-description">
           <ul class="product-description">
-            <li>ota 기능 구현</li>
-            → 서버와 통신한 데이터의 단말의 버전 정보를 전달 하여 현재 단말의 단말 버전과 서버에 전송
-            <br> 버전 정보가 다르면 펌웨어 ota 시작
+            <li>OTA 기능 구현</li>
+            → 서버에 현재 단말의 버전 정보가 전달되고, 이전 단말 버전과 이를 비교. 버전 정보가 다르면 펌웨어 OTA 시작
             <li>신규 센서 추가</li>
-            → uart 통신 센서 추가
-            <li>미 전송 데이터 읽고 쓰기</li>
-            → flash 데이터 저장되는 전송 실패한 센서 데이터를 저장 하고 전송
+            → UART 통신 센서 추가
+            <li>미전송 데이터 읽고 쓰기</li>
+            → Flash 데이터에 저장되는 전송 실패 센서 데이터를 저장하고 전송
             <li>보드간 데이터 연동</li>
           </ul>
         </p>
         <h4 class="product-little-title">5. 결과 및 효과</h4>
         <p class="product-description">
          <ul class="product-description">
-          <li>구미시 화재 발생시 화재 경로 예측 실시 간 대기환경 모니터링 </li>
+          <li>구미시 화재 발생 이후 화재 경로 예측. 실시간 대기환경 모니터링</li>
          </ul>
         </p>
       </div>
