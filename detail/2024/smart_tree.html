@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <title>제품 소개</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .product-image {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        display: block;
+      }
+      .product-info {
+        text-align: center;
+      }
+      .product-title {
+        font-size: 24px;
+        margin: 20px 0;
+      }
+
+      .product-little-title {
+        text-align: left;
+        font-size: 18px;
+        color: #333;
+      }
+      .product-description {
+        text-align: left;
+        font-size: 16px;
+        color: #333;
+      }
+
+      a:hover {
+        color : red;
+        text-decoration: underline;
+      }
+      a:active {
+        color : green;
+        text-decoration: none;
+      }
+    </style>
+
+    <section>
+      <div>
+        <nav><a href="../../index.html">Home</a></nav>
+        <nav><a href="https://github.com/qkrwogur">github</a></nav>
+      </div>
+    </section>
+  </head>
+  <body>
+    <div class="container">
+      <div class="product-info">
+        <h1 class="product-title">서울시 공공 와이파이 트래커</h1>
+        <h4 class="product-little-title">1. 제품 이미지</h4>
+        <img
+          src="../../img/스마트_트리.png"
+          alt="Widget X 제품 이미지"
+          class="product-image"
+          width="800" height="400"
+        />
+        <h4 class="product-little-title">2. 주요 기능</h4>
+        <p class="product-description">
+          공원 스마트 트리 단말로, 일몰과 일출 시간에 경광 조명 제어.
+          대기 측정 데이터 lcd 표출, 쿨링 포그 동작 제어, ai카메라 에게 위급 상황 수신시 조명및 스피터 음성 제어
+        </p>
+        <br>
+        <h4 class="product-little-title">
+          3. 아키텍처 다이어그램
+        </h4>
+        <img
+        src="../../img/스마트_트리_아키텍처.png"
+        width="900" height="600"
+        />
+        
+        <h4 class="product-little-title">4. 나의 역할</h4>
+        <p class="product-description">
+          <ul class="product-description">
+            <li>Led 디밍 제어 기능</li>
+              → 모션 감지시 led pwm 제어 밝기조절 모션이 감지되면 밝기 100% 변경. 모션 인터럽트 Low 가 되면 밝기 50%로 변경
+            <li>쿨링 포그 제어기능</li>
+              → 온도 습도 측정기로 들어오는 데이터를 바탕으로 쿨링포그 동작 및 정지 시나리오 기능 구현. 요구사항에 맞는 여름에 작동하도록 현재 작동 시간의 달 확인 
+            <li>일몰 일출 관리 기능</li>
+              → 과천 일출 시간과 일몰 시간을 계산하여 Led 디밍 제어 일출 시 Led Off 일몰시간에 On
+          </ul>
+        </p>
+        <h4 class="product-little-title">5. 결과 및 효과</h4>
+        <p class="product-description">
+         <ul class="product-description">
+          <li><a href="https://www.viva100.com/article/20241022501225">관련 기사</a></li>
+         </ul>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
